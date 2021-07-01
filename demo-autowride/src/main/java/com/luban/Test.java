@@ -7,8 +7,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Test {
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext ac=new AnnotationConfigApplicationContext(Appconfig.class);
-		C bean =(C) ac.getBean("indexService");
-		System.out.println(bean);
+		AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(Appconfig.class);
+		ac.getBean(IndexService.class).getService();
+//		C bean = (C) ac.getBean("indexService");
+//		System.out.println(bean);
 	}
 }

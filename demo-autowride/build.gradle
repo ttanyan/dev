@@ -12,6 +12,8 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile project(":spring-context")
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'org.testng:testng:7.1.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    api project(":spring-context")
 }

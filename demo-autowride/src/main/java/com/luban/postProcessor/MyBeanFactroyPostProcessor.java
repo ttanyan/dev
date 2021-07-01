@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class MyBeanFactroyPostProcessor implements InstantiationAwareBeanPostProcessor {
 	@Override
 	public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
-		if("indexService".equals(beanName)){
+		if ("indexService".equals(beanName)) {
 			return new C();
 		}
 		return null;

@@ -4,11 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class IndexService{
-//	@Autowired
-//	UserService userService;
+public class IndexService {
+	@Autowired
+	UserService userService;
 
-	IndexService(){
+	IndexService() {
 		System.out.println("indexService init");
+	}
+
+	public void getService(){
+		System.out.println(userService.hashCode());
 	}
 }

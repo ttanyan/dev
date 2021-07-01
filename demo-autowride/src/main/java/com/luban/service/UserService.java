@@ -9,7 +9,9 @@ public class UserService {
 //	@Autowired
 //	IndexService indexService;
 
-	UserService(){
+	UserService() {
 		System.out.println("userService init");
 	}
+
+
 }
